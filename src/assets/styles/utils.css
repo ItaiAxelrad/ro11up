@@ -1,0 +1,29 @@
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  place-items: space-between;
+  min-height: 100vh;
+}
+
+.flex-container {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.home {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.icon {
+  display: inline;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.brand {
+  max-height: 5rem;
+}
