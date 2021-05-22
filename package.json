@@ -13,11 +13,11 @@
     "update": "npm i -g npm-check-updates && ncu -u && npm install && npm audit fix"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "autoprefixer": "^10.2.5",
     "canvas-confetti": "^1.4.0",
-    "eleventy": "^1.0.6",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.0",
     "rollup": "^2.48.0",
