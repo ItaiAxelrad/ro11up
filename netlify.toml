@@ -1,0 +1,22 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+[[plugins]]
+  package = "netlify-plugin-image-optim"
+  
+[[plugins]]
+  package = "netlify-plugin-minify-html"
+
+  [plugins.inputs]
+    contexts = [
+      'production',
+      'branch-deploy',
+      'deploy-preview'
+    ]
+
+  [plugins.inputs.minifierOptions]
+    collapseInlineTagWhitespace = false
